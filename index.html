@@ -3,18 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iDragon - JavaScript Game</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <title>iRun - JavaScript Game</title>
+
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+
+    <script src="script.js" defer></script>
 </head>
+
 <body>
+
     <div class="gameContainer">
-        <div class="gameOver">Welcome to iDragon Adventures</div>
-        <!-- <div class="gameOver">Welcome to iDragon - Created by Harry</div> -->
+
+        <!-- START / PAUSE / RESUME / PLAY AGAIN SCREEN -->
+        <div id="menuScreen">
+
+            <div class="menuBox">
+
+                <h1 id="menuTitle">🏃 Welcome to iRun</h1>
+
+                <p id="menuMessage">
+                    Press the keys below to play
+                </p>
+
+                <!-- Controls -->
+                <div class="controls">
+
+                    <p>⬆ <b>UP</b> → Jump</p>
+
+                    <p>⬅ <b>LEFT</b> → Move Left</p>
+
+                    <p><b>RIGHT</b> → Move Right</p>
+
+                </div>
+
+                <!-- Start Button -->
+                <button id="startBtn" class="menuBtn">
+                    START GAME
+                </button>
+
+                <!-- Resume Button -->
+                <button id="resumeBtn" class="menuBtn">
+                    RESUME
+                </button>
+
+                <!-- Play Again Button -->
+                <button id="playAgainBtn" class="menuBtn">
+                    PLAY AGAIN
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- GAME TITLE -->
+        <div class="gameOver">
+            Welcome to iRun Adventures
+        </div>
+
+
+        <!-- DINO -->
         <div class="dino"></div>
-        <div id="scoreCont">Your Score: 0</div>
-        <div class="obstacle obstacleAni"></div>
+
+
+        <!-- SCORE -->
+        <div id="scoreCont">
+            Your Score: 0
+        </div>
+
+
+        <!-- PAUSE BUTTON -->
+        <button id="pauseBtn">
+            ⏸ PAUSE
+        </button>
+
+
+        <!-- OBSTACLE -->
+        <div class="obstacle"></div>
+
     </div>
+
 </body>
 </html>
